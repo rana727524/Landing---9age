@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earning Landing Page</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to bottom right, #000000, #000000);
+        color: white;
+        text-align: center;
+    }
+
+    .header {
+        background: #00c3ff;
+        padding: 12px;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .header a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .headline {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 40px;
+        color: rgb(5, 255, 5);
+    }
+
+    .tagline {
+        font-size: 16px;
+        margin-bottom: 25px;
+        color: #4000f0;
+    }
+
+    .countdown {
+        background: rgb(255, 255, 7);
+        color: black;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 12px 25px;
+        border-radius: 10px;
+        display: inline-block;
+        animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    .join-link {
+        display: block;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(201, 15, 15);
+        text-decoration: none;
+    }
+
+    .features {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 2;
+        color: #ddd;
+    }
+
+    .btn {
+        background: #f30303;
+        color: white;
+        padding: 14px 30px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 25px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #f11010;
+        box-shadow: 0 0 15px rgba(236, 11, 11, 0.7);
+        transform: translateY(-2px);
+    }
+
+    .spots-left {
+        margin-top: 10px;
+        color: #ffcc00;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <a href="https://t.me/+Cv3kfV7FxnVjZjA1" target="_blank">📢 OUR TELEGRAM CHANNEL – START EARNING</a>
+</div>
+
+<div class="headline">EARN DAILY 1000 – 10000</div>
+<div class="tagline">Guaranteed returns | Limited Offer</div>
+
+<div>
+    <div class="countdown" id="timer">15</div>
+    <a href="#" class="join-link">Click here to join fast</a>
+</div>
+
+<div class="features">
+    ✅ Real Earning Proofs <br>
+    ✅ Trusted by 5000+ Members <br>
+    ✅ Instant Daily Alerts
+</div>
+
+<a href="https://t.me/+v7N-DAFooixhYmNl" class="btn" target="_blank">SUBSCRIBE FOR FREE →</a>
+
+<div class="spots-left">⚡ Only <span id="spots">12</span> spots left today!</div>
+
+<script>
+    // Countdown Timer
+    let time = 15;
+    const timerElement = document.getElementById('timer');
+    setInterval(() => {
+        time--;
+        if(time <= 0) time = 15;
+        timerElement.textContent = time;
+    }, 1000);
+
+    // Spots Left Countdown
+    let spots = 12;
+    const spotsElement = document.getElementById('spots');
+    setInterval(() => {
+        if(spots > 1) {
+            spots--;
+            spotsElement.textContent = spots;
+        }
+    }, 5000);
+</script>
+
+</body>
+</html>
